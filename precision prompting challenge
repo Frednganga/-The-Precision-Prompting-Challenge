@@ -1,0 +1,37 @@
+Savannah Tracker Report: AI Strategy for Maternal Health
+Introduction
+In rural Kenya and Uganda, generic advice is a safety risk. Precision in AI prevents "hallucinated" solutions that ignore physical and financial realities. By localizing prompts to include staples like matooke and the realities of M-Pesa or clinic distances, we transform a digital tool into a trusted lifelines for expectant mothers.
+Prompt A: Hyper-Localized Nutrition (AIM + MAP)
+Rewritten Prompt:
+"Act as a maternal health nutritionist specializing in East African rural diets. Your goal is to provide a balanced meal plan using affordable, local staples. Use the mother’s reported location to suggest specific seasonal crops (e.g., matooke in Uganda, kale/sukuma wiki in Kenya) and ensure all protein sources mentioned (e.g., omena, beans) are accessible via small-scale local markets."
+AIM Components:
+Action (A): Act as a maternal health nutritionist.
+Intent (I): Provide balanced meal plans using affordable local staples.
+Measure (M): Must include specific crops based on location and mention accessible protein sources.
+MAP Components:
+Mission (M): Improve maternal nutrition using hyper-localized, accessible foods.
+Audience (A): Rural expectant mothers in Kenya and Uganda.
+Persona (P): A knowledgeable, culturally sensitive local health expert.
+Key Improvement: Cultural Alignment. The original gave generic "leafy greens" advice; this version ensures the AI suggests Sukuma Wiki or Matooke, which provides roughly 60% of daily calories in target regions, making the advice practical rather than alienating.
+Prompt B: Context-Aware Reminders (AIM + MAP)
+Rewritten Prompt:
+"Review the user’s upcoming clinic appointment and their proximity to the facility. Draft an SMS reminder that accounts for the typical 5km+ travel distance and suggests setting aside M-Pesa funds for transport. Include a check-in question regarding whether they have coordinated with their local Community Health Worker (CHW) for an escort or clinic confirmation."
+AIM Components:
+Action (A): Review appointment details and draft a reminder.
+Intent (I): Ensure the mother can physically and financially reach the clinic.
+Measure (M): Mention travel distance, M-Pesa for transport, and CHW coordination.
+MAP Components:
+Mission (M): Increase clinic attendance rates despite logistical hurdles.
+Audience (A): Mothers living in remote areas with limited transport.
+Persona (P): A proactive, resourceful community health coordinator.
+Key Improvement: Operational Reality. It addresses the fact that 70% of our users live >5km from clinics. By prompting for M-Pesa and CHW involvement, the AI moves from "notifying" to "problem-solving."
+Prompt C: Emergency Triage (Chain-of-Thought + Verifier)
+Rewritten Prompt:
+"A mother reports feeling unwell.
+Step 1 (CoT): First, analyze symptoms for 'Red Flags' (e.g., blurred vision, heavy bleeding, severe abdominal pain).
+Step 2 (CoT): Determine the nearest level of care (CHW vs. Hospital) based on symptom severity.
+Step 3 (Verifier): Before outputting, cross-check the advice against the WHO Maternal Care guidelines.
+Output: Provide calm, step-by-step instructions. If a Red Flag is present, instruct them to contact their CHW immediately for emergency transport."
+Key Improvement: Reduced Hallucination/Safety Risk. The Verifier Pattern forces the AI to check its own logic against medical standards before sending a text. This prevents the AI from suggesting "rest" when the symptoms actually indicate pre-eclampsia.
+Reflection
+This exercise shifts my view of AI from a "source of information" to a "contextual engine." In healthcare, an AI that doesn't understand the price of a boda-boda or the nutritional value of ugali is effectively broken. We aren't just building a chatbot; we are building a bridge between clinical standards and rural realities. My role as AI Strategy Lead is to ensure the "intelligence" is grounded in the dust and daily life of the Savannah, ensuring technology serves the user's environment rather than asking the user to adapt to the technology.
